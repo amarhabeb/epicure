@@ -10,11 +10,11 @@ function  navigateToContactUs(){
 }
 
 function  navigateToTermOfUse(){
-navigate('../../pages/termOfUse')
+navigate('src/pages/termOfUse')
     }
 
 function  navigateToPrivacyPolicy(){
-navigate('../../pages/privacyPolicy')
+navigate('src/pages/privacyPolicy')
 
 }
   return (

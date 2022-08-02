@@ -6,14 +6,15 @@ const navigate = useNavigate()
 
 function  navigateToContactUs(){
     navigate('src/pages/contactUs')
+
 }
 
 function  navigateToTermOfUse(){
-navigate('../../pages/termOfUse/TermOfUse')
+navigate('../../pages/termOfUse')
     }
 
 function  navigateToPrivacyPolicy(){
-navigate('../../pages/privacyPolicy/PrivacyPolicy')
+navigate('../../pages/privacyPolicy')
 
 }
   return (

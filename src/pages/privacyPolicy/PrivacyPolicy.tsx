@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function PrivacyPolicy() {
   return (
-    <div>PrivacyPolicy</div>
+    <div><h1>PRIVACYPAGE</h1></div>
   )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import {useNavigate } from 'react-router';
+import { Div } from '../layout/style';
 
 export default function Navigator() {
 const navigate = useNavigate()
@@ -18,11 +19,11 @@ navigate('src/pages/privacyPolicy')
 
 }
   return (
-    <div className='navigator'>
-        <div onClick={navigateToContactUs}>Contact Us</div>
-        <div onClick={navigateToTermOfUse}>Term of Use</div>
-        <div onClick={navigateToPrivacyPolicy}>Privacy Policy</div>
-    </div>
+    <Div>
+        <Div onClick={navigateToContactUs}>Contact Us</Div>
+        <Div onClick={navigateToTermOfUse}>Term of Use</Div>
+        <Div onClick={navigateToPrivacyPolicy}>Privacy Policy</Div>
+    </Div>
     
   )
 }

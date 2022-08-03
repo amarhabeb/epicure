@@ -1,6 +1,6 @@
 .hamburList{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     padding: 40px 12px 24px 20px;
     gap: 24px;
@@ -10,14 +10,42 @@
     font-size: 18px;
     font-weight: 200;
     line-height: 22px;
-
-    
     background: #FFFFFF;
     box-shadow: 2px 4px 10px rgba(175, 175, 175, 0.25);
+    cursor: pointer;
+    border-color: black;
+    border-style: solid;
+    border-left: 0.5px solid #000000;
+    background-image: 'images/heroesBackground.png';
+    
+    
 }
 
 .line{
-    border-bottom: 1px solid #F2F2F2;
-    width: 100%;
+display: flex;
+justify-content: center;
+width: 100%;
+justify-self: center;
+position:absolute;
+background-color: black;
+text-align: center;
+width: 20px;
+height: 20px;
+position:fixed;
+bottom: 0;
+left: 0;
+right: 0;
+top:0;
+margin-bottom: 0;
 }
 
+hero{
+    background-size: auto;
+    background-attachment:scroll;
+    height: 273px;
+    left: -140px;
+    top: 46px;
+    border-radius: 0px;
+
+
+}

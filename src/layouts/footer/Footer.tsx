@@ -1,8 +1,9 @@
-import './style.css';
 import React from 'react'
 import {useNavigate } from 'react-router';
+import { DivFooter } from './style';
+import { Div } from '../layout/style';
 
-export default function footer() {
+export default function Footer() {
   const navigate = useNavigate()
 
   function  navigateToContactUs(){
@@ -19,11 +20,11 @@ export default function footer() {
   
   }
     return (
-      <div className='footer'>
-          <div onClick={navigateToContactUs}>Contact Us</div>
-          <div onClick={navigateToTermOfUse}>Term of Use</div>
-          <div onClick={navigateToPrivacyPolicy}>Privacy Policy</div>
-      </div>
+      <DivFooter>
+          <Div onClick={navigateToContactUs}>Contact Us</Div>
+          <Div onClick={navigateToTermOfUse}>Term of Use</Div>
+          <Div onClick={navigateToPrivacyPolicy}>Privacy Policy</Div>
+      </DivFooter>
       
     )
   }

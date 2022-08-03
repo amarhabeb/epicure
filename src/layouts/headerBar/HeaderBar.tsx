@@ -1,5 +1,6 @@
 import React from 'react'
-import './style.css'
+import { Button, Div, Img } from '../layout/style'
+import { DivHeaderBar } from './style'
 export default function HeaderBar(props: any) {
     function onHamburClick(){
         props.setShowHamburList(true)
@@ -14,18 +15,18 @@ export default function HeaderBar(props: any) {
     
       }
   return (
-    <div className='headerBar' >
-    <div className='hambur' >
-      <button onClick={onHamburClick}><img src='icons/HAMBUR.png' alt='harbur'></img></button>   
-    </div>
-    <div className='logo'>
-      <img src='icons/about-logo.png' alt='logo'></img>
-    </div>
-    <div className='rightIcons' >
-      <button onClick={onSearchClick}><img src='icons/Group.png' alt='search'></img></button>   
-      <button onClick={onUserClick}><img src='icons/User.png' alt='user'></img></button>   
-      <button onClick={onBagClick}><img src='icons/EmptyBag.png' alt='emptybag'></img></button>   
-    </div>
-  </div>
+    <DivHeaderBar >
+    <Div >
+      <Button onClick={onHamburClick}><Img src='icons/HAMBUR.png' alt='harbur'></Img></Button>   
+    </Div>
+    <Div>
+      <Img src='icons/about-logo.png' alt='logo'></Img>
+    </Div>
+    <Div>
+      <Button onClick={onSearchClick}><Img src='icons/Group.png' alt='search'></Img></Button>   
+      <Button onClick={onUserClick}><Img src='icons/User.png' alt='user'></Img></Button>   
+      <Button onClick={onBagClick}><Img src='icons/EmptyBag.png' alt='emptybag'></Img></Button>   
+    </Div>
+  </DivHeaderBar>
   )
 }

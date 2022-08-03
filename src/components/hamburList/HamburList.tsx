@@ -1,9 +1,12 @@
 import React from 'react'
 import {useNavigate } from 'react-router';
 import Footer from '../../layouts/footer/Footer';
-import './style.css'
+import {Line, DivHamburList} from './style'
+import  {UpdateOpen}  from '../../layouts/header/Header';
+import { Button, Div, Img } from '../../layouts/layout/style';
 
-export default function HamburList(props: any) {
+
+export default function HamburList(props: UpdateOpen) {
     const navigate = useNavigate()
 
     function  navigateToResturantsPage(){
@@ -16,20 +19,20 @@ export default function HamburList(props: any) {
     
     }
     function  closeHambulList(){
-        props.setShowHamburList(false)
+        props.CloseMenu(false)
     
     }
   return (
-    <div className='hamburList'>
-        <div className='closeImg'>
-            <button onClick={closeHambulList}>
-                <img className='closehambur' src='icons/BlackX.png' alt='blackx'/>
-            </button>       
-        </div>
-        <div className='resturantsDiv' onClick={navigateToResturantsPage}>Resturants</div>
-        <div className='chefsDiv' onClick={navigateToChefsPage}>Chefs</div>
-        <div className='line'/>
-        <div className='footer'><Footer/></div>
-    </div>
+    <DivHamburList>
+        <Div>
+            <Button onClick={closeHambulList}>
+                <Img className='closehambur' src='icons/BlackX.png' alt='blackx'/>
+            </Button>       
+        </Div>
+        <Div  onClick={navigateToResturantsPage}>Resturants</Div>
+        <Div  onClick={navigateToChefsPage}>Chefs</Div>
+        <Line/>
+        <Footer/>
+    </DivHamburList>
   )
 }

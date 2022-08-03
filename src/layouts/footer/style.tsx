@@ -1,5 +1,7 @@
-.footer {
-    display: flex;
+import styled from 'styled-components'
+
+export const DivFooter = styled.div`
+display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: start;
@@ -14,4 +16,4 @@
     position: relative;
     bottom: 0;
     width: 100%;
-}
+    cursor: pointer;`

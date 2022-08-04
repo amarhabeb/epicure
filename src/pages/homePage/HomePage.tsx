@@ -3,11 +3,12 @@ import Heroes from '../../components/heroes/Heroes'
 import PopularResturants from '../../components/popularResturants/PopularResturants'
 import { Div } from '../../layouts/layout/style'
 
+
 export default function HomePage() {
   return (
-    <Div style={{marginTop: '45px'}} >
+    <Div style={{marginTop: '45px', width:'100%'}} >
       <Heroes/>
-      <PopularResturants/>
+      <PopularResturants/> 
     </Div>
   )
 }

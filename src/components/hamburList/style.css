@@ -22,6 +22,7 @@
 }
 
 .line{
+
 display: flex;
 justify-content: center;
 width: 100%;
@@ -36,7 +37,15 @@ bottom: 0;
 left: 0;
 right: 0;
 top:0;
+text-align: center;
 margin-bottom: 0;
+justify-self: center;
+align-items: center;
+position: fixed;
+margin-top: 48px;
+margin-bottom: 17px;
+margin-top: auto;
+justify-self: center;
 }
 
 hero{

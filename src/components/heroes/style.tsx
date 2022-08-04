@@ -5,6 +5,7 @@ background-image: url("images/heroesBackground.png");
 background-size: cover;
 background-repeat: no-repeat;
 height: 273px;
+width: 95%;
 display: flex;
 align-items: center;
 justify-content: center;

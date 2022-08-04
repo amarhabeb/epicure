@@ -15,4 +15,6 @@ display: flex;
     text-align: left;
     bottom: 0;
     width: 100%;
-    cursor: pointer;`
+    margin-top: 48px;
+    cursor: pointer;
+    position: relative;`

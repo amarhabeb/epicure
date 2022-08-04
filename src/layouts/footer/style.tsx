@@ -13,7 +13,6 @@ display: flex;
     gap: 24px;
     letter-spacing: 1.9199999570846558px;
     text-align: left;
-    position: relative;
     bottom: 0;
     width: 100%;
     cursor: pointer;`

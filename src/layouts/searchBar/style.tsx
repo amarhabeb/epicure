@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const DivSearchBar = styled.div`
 width: 100%;
-margin 5%;`
+margin 5%;
+`
 
 export const HeaderSearchBar = styled.div`
 
@@ -36,8 +37,7 @@ left: -1px;
 top: 46px;
 background: #FFFFFF;
 box-shadow: 2px 4px 10px rgba(175, 175, 175, 0.25);
-border-color: black;
-border-style: solid;`
+`
 
 
 export const DivSearch = styled.div`
@@ -50,8 +50,7 @@ padding: 6px 12px;
 gap: 8px;
 height: 30px;
 top: 100px;
-border: 0.5px solid #000000;
-border-radius: 4px;`
+`
 
 export const SearchInput = styled.input`
 width: 80%;

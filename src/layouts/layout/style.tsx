@@ -4,6 +4,10 @@ export const DivFooterInLayOut = styled.div`
 margin: 5%;`
 
 export const Div = styled.div``
+export const DivLayOut = styled.div`
+margin-left: 5%;
+ width: 90%;`
+
 
 export const Button = styled.button`
 `
@@ -25,7 +29,8 @@ letter-spacing: 1.25px;
 text-transform: uppercase;
 color: #000000;`
 
-export const DivSlide = styled.div``
+export const DivSlide = styled.div`
+width: 100px;`
 
 export const DivContainNavigator = styled.div`
 margin-top: 16px;
@@ -35,8 +40,6 @@ justify-content: flex-start;
 align-items: center;
 padding: 0px;
 gap: 12px;
-
-position: relative;
 width: 90%;
 
 

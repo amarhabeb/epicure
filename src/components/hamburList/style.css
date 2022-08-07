@@ -1,4 +1,14 @@
 
 div{
-    margin-top: 16px;
+    margin-right: 5%;
+    margin-left: 5%;
+    height: 30px;
+     width: 100%;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    position: fixed;
+    margin-top: 48px;
+    justify-content: space-around;
+    
 }

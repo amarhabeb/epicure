@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const DivFooter = styled.div`
-display: flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: start;
@@ -13,8 +13,9 @@ display: flex;
     gap: 24px;
     letter-spacing: 1.9199999570846558px;
     text-align: left;
+    top: 0;
     bottom: 0;
     width: 100%;
-    margin-top: 48px;
+    margin-top: 33px;
     cursor: pointer;
     position: relative;`

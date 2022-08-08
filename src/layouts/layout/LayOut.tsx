@@ -1,5 +1,5 @@
 import React from 'react'
-import {DivFooterInLayOut, Div} from './style'
+import {DivFooterInLayOut, Div, DivLayOut} from './style'
 import { Route } from 'react-router';
 import { BrowserRouter, Routes } from 'react-router-dom';
 import Header from '../header/Header'
@@ -14,10 +14,10 @@ import Chefs from '../../pages/chefs/Chefs';
 
 export default function LayOut() {
   return (
-    <Div>
+    <DivLayOut style={{width: 'window.innerWidth', marginTop: '0'}}>
     <BrowserRouter>
-    <Header/>
     <DivFooterInLayOut>
+    <Header/>
       <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path="src/pages/contactUs" element={<ContactUs/>}/>
@@ -26,12 +26,13 @@ export default function LayOut() {
         <Route path="src/pages/resturants" element={<Resturants/>}/>
         <Route path="src/pages/chefs" element={<Chefs/>}/>
       </Routes>     
+    
       <Footer/>
     </DivFooterInLayOut>
     
     
     </BrowserRouter>
-    </Div>
+    </DivLayOut>
     
   )
 }

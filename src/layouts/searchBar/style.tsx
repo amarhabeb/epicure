@@ -66,7 +66,6 @@ letter-spacing: 1.29px;
 
 color: #000000;
 
-opacity: 0.2;
 
 /* Inside auto layout */
 flex: none;

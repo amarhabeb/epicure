@@ -7,7 +7,6 @@ justify-content: center;
 align-items: center;
 text-align: center;
 gap: 32px;
-
 width: 100%;
 height: 584px;
 

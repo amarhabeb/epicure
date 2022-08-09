@@ -7,77 +7,79 @@ export class AppData
             chefName: "Ran Shmueli", 
             isPopular: true, 
             isNew: false, 
-            isOpen: true, 
-            pathToCover: "resturants images/claro.svg"}},
+            isOpen: false, 
+            pathToCover: "/resturants images/claro.svg"}},
 
         { resturant:
             {resturantName: 'Kab Kem',
              chefName: "Yariv Malili", 
              isPopular: true, 
-             isNew: true, 
-             isOpen: true, 
-             pathToCover: "resturants images/Kab kem.svg"}},
+            isNew: false, 
+            isOpen: false, 
+             pathToCover: "/resturants images/Kab kem.svg"}},
 
         { resturant:
             {resturantName: 'Messa', 
             chefName: "Aviv Moshe", 
-            isPopular: false, 
-            isNew: false, 
-            isOpen: false, 
-            pathToCover: "resturants images/Messa.svg"}},
-
-        { resturant:
-            {resturantName: 'Nitan Thai', 
-            chefName: "Shahaf Shabtay", 
             isPopular: true, 
             isNew: false, 
             isOpen: false, 
-            pathToCover: "resturants images/nithan-thai.svg"}},
+            pathToCover: "/resturants images/Messa.svg"}},
 
         { resturant:
             {resturantName: 'Nitan Thai', 
             chefName: "Shahaf Shabtay", 
-            isPopular: true, "isNew": false, 
+            isPopular: false, 
+            isNew: true, 
             isOpen: false, 
-            pathToCover: "resturants images/nithan-thai.svg"}},
-            { resturant:
-                {resturantName: 'Claro',
-                chefName: "Ran Shmueli", 
-                isPopular: true, 
-                isNew: false, 
-                isOpen: true, 
-                pathToCover: "resturants images/claro.svg"}},
-    
-            { resturant:
-                {resturantName: 'Kab Kem',
-                 chefName: "Yossi Shitrit", 
-                 isPopular: true, 
-                 isNew: true, 
-                 isOpen: true, 
-                 pathToCover: "resturants images/Kab kem.svg"}},
-    
-            { resturant:
-                {resturantName: 'Messa', 
+            pathToCover: "/resturants images/nithan-thai.svg"}},
+
+        { resturant:
+            {resturantName: 'Nitan Thai', 
+            chefName: "Shahaf Shabtay", 
+            isPopular: false, 
+            isNew: true, 
+            isOpen: false, 
+            pathToCover: "/resturants images/nithan-thai.svg"}},
+        { resturant:
+            {resturantName: 'Claro',
+            chefName: "Ran Shmueli", 
+            isPopular: false, 
+            isNew: true, 
+            isOpen: false, 
+            pathToCover: "/resturants images/claro.svg"}},
+
+        { resturant:
+            {resturantName: 'Kab Kem',
                 chefName: "Yossi Shitrit", 
                 isPopular: false, 
                 isNew: false, 
-                isOpen: false, 
-                pathToCover: "resturants images/Messa.svg"}},
-    
-            { resturant:
-                {resturantName: 'Nitan Thai', 
-                chefName: "Yossi Shitrit", 
-                isPopular: true, 
+                isOpen: true, 
+                pathToCover: "/resturants images/Kab kem.svg"}},
+
+        { resturant:
+            {resturantName: 'Messa', 
+            chefName: "Yossi Shitrit", 
+            isPopular: false, 
                 isNew: false, 
-                isOpen: false, 
-                pathToCover: "resturants images/nithan-thai.svg"}},
-    
-            { resturant:
-                {resturantName: 'Nitan Thai', 
-                chefName: "Ran Shmueli",
-                isPopular: true, "isNew": false, 
-                isOpen: false, 
-                pathToCover: "resturants images/nithan-thai.svg"}}
+                isOpen: true, 
+            pathToCover: "/resturants images/Messa.svg"}},
+
+        { resturant:
+            {resturantName: 'Nitan Thai', 
+            chefName: "Yossi Shitrit", 
+            isPopular: false, 
+                isNew: false, 
+                isOpen: true,  
+            pathToCover: "/resturants images/nithan-thai.svg"}},
+
+        { resturant:
+            {resturantName: 'Nitan Thai', 
+            chefName: "Ran Shmueli",
+            isPopular: false, 
+                isNew: false, 
+                isOpen: true, 
+            pathToCover: "/resturants images/nithan-thai.svg"}}
         ];
 
     static dishesArray:{dish: dishCard}[]=[

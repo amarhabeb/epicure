@@ -1,15 +1,17 @@
 import styled from 'styled-components'
 
 export const DivFooterInLayOut = styled.div`
-margin: 5%;`
+margin: 5%;
+`
 
 export const Div = styled.div``
 export const DivLayOut = styled.div`
-margin-left: 5%;
- width: 90%;`
+ width: 100%;`
 
 
 export const Button = styled.button`
+background-color: transparent;
+border: none;
 `
 
 export const Img = styled.img``

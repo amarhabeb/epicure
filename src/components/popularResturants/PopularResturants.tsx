@@ -13,7 +13,7 @@ export default function PopularResturants() {
 
 }
   return (
-    <Div>
+    <Div style={{marginLeft: '5%'}}>
         <Title>popular restaurant in epicure:</Title>
         <DivPopularOnHome>
         {AppData.resturantsArray.filter(res => res.resturant.isPopular).map((resturant, key)=>(

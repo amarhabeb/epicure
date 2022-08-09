@@ -3,13 +3,16 @@ import styled from 'styled-components'
 export const DivChefOfTheWeek = styled.div`
 display: flex;
 flex-direction: column;
+margin-left: 5%;
+width: 95%;
 `
 export const DivChefOfTheWeekContent = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-width: 100%;
+margin-right: 5%;
+width: 95%;
 `
 
 

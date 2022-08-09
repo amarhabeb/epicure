@@ -1,14 +1,18 @@
 
 div{
-    margin-right: 5%;
     margin-left: 5%;
     height: 30px;
-     width: 100%;
+     width: 95%;
     text-align: center;
     align-self: center;
     justify-self: center;
     position: fixed;
     margin-top: 48px;
+    margin: 5%;
     justify-content: space-around;
+    background-color: transparent;
+    border: none;
+    align-content: center;
+    margin-bottom: 37px;
     
 }

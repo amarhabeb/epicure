@@ -6,11 +6,12 @@ import { DivAboutFirstParagraph, DivAboutOnHomePage, DivAboutSecondParagraph } f
 export default function AboutComponent() {
   return (
     <DivAboutOnHomePage>
-         <Div style={{ width: '100%', height: '95px'}}>  
-         <Img src='icons/about-logo.png' style={{ width: '27%', cursor: 'pointer', marginTop: '24px'}} alt='logo'/>
+        <Div style={{marginLeft: '5%'}}>
+         <Div style={{ width: '100%', height: '95px', marginBottom: '45px', marginTop: '24px'}}>  
+         <Img src='icons/logoBig.svg' style={{ width: '27%', cursor: 'pointer', marginBottom: '45px'}} alt='logo'/>
         </Div>
         <Div style={{width: '100%'}}>  
-         <Img src='icons/apple.png' style={{ width: '50%', cursor: 'pointer'}} alt='apple'/>
+         <Img src='icons/apple.png' style={{ width: '50%', cursor: 'pointer', marginBottom: '45px'}} alt='apple'/>
         </Div>
         <Div style={{width: '100%'}}>  
          <Img src='icons/google.png' style={{ width: '50%', cursor: 'pointer'}} alt='google'/>
@@ -24,6 +25,7 @@ export default function AboutComponent() {
         <DivAboutSecondParagraph>
             
         </DivAboutSecondParagraph>
+      </Div>
     </DivAboutOnHomePage>
   )
 }

@@ -15,7 +15,7 @@ export default function DishesToShowOnHomePage() {
   
   }
     return (
-      <Div>
+      <Div style={{marginLeft: '5%'}}>
           <Title>Signature Dish Of:</Title>
           <DivDishOnHome>
           {dishesToShow.map((dish, key)=>(

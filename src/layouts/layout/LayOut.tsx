@@ -16,7 +16,7 @@ export default function LayOut() {
   return (
     <DivLayOut style={{width: 'window.innerWidth', marginTop: '0'}}>
     <BrowserRouter>
-    <DivFooterInLayOut>
+    <Div>
     <Header/>
       <Routes>
         <Route path='/' element={<HomePage/>}/>
@@ -26,9 +26,10 @@ export default function LayOut() {
         <Route path="src/pages/resturants" element={<Resturants/>}/>
         <Route path="src/pages/chefs" element={<Chefs/>}/>
       </Routes>     
-    
+    <DivFooterInLayOut>
       <Footer/>
     </DivFooterInLayOut>
+    </Div>
     
     
     </BrowserRouter>

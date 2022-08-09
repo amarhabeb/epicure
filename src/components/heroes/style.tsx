@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const DivHeroes = styled.div`
-background-image: url("images/heroesBackground.png");
+background-image: url("/images/heroesBackground.png");
 background-size: cover;
 background-repeat: no-repeat;
 height: 273px;

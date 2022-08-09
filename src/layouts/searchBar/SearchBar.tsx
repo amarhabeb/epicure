@@ -12,14 +12,14 @@ export default function SearchBar(props: UpdateOpen) {
     <DivSearchBar>
         <HeaderSearchBar>
             <Button onClick={closeSearchBar}>
-                <Img src='icons/BlackX.png' alt='blackx'/>
+                <Img src='/icons/BlackX.png' alt='blackx'/>
             </Button>  
             <SearchTerm>Search</SearchTerm>     
         </HeaderSearchBar>
         <DivBodySearchBar>
             <DivSearch>
                 <SearchButton>
-                   <Img src='icons/search.svg' alt='search'/> 
+                   <Img src='/icons/search.svg' alt='search'/> 
                 </SearchButton>
             
             <SearchInput type="text" placeholder="Search for restaurant cuisine, chef"/>

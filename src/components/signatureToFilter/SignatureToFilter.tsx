@@ -1,7 +1,6 @@
 import React from 'react'
 import { AppData } from '../../constants/data'
 import { Div, Img, Title } from '../../layouts/layout/style'
-import DishesToShowOnHomePage from '../dishesToShoOnHomePage/DishesToShowOnHomePage'
 import { DivSignatueToFilter, TitleSignatureToFilter } from './style'
 
 export default function SignatureToFilter() {

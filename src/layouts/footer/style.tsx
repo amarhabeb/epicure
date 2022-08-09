@@ -18,4 +18,4 @@ export const DivFooter = styled.div`
     width: 100%;
     margin-top: 33px;
     cursor: pointer;
-    position: relative;`
+    `

@@ -8,7 +8,8 @@ export class AppData
             isPopular: true, 
             isNew: false, 
             isOpen: false, 
-            pathToCover: "/resturants images/claro.svg"}},
+            pathToCover: "/resturants images/claro.svg",
+            starsNumber: 5}},
 
         { resturant:
             {resturantName: 'Kab Kem',
@@ -16,7 +17,8 @@ export class AppData
              isPopular: true, 
             isNew: false, 
             isOpen: false, 
-             pathToCover: "/resturants images/Kab kem.svg"}},
+             pathToCover: "/resturants images/Kab kem.svg",
+             starsNumber: 4}},
 
         { resturant:
             {resturantName: 'Messa', 
@@ -24,7 +26,9 @@ export class AppData
             isPopular: true, 
             isNew: false, 
             isOpen: false, 
-            pathToCover: "/resturants images/Messa.svg"}},
+            pathToCover: "/resturants images/Messa.svg"
+            ,
+            starsNumber: 5}},
 
         { resturant:
             {resturantName: 'Nitan Thai', 
@@ -32,7 +36,8 @@ export class AppData
             isPopular: false, 
             isNew: true, 
             isOpen: false, 
-            pathToCover: "/resturants images/nithan-thai.svg"}},
+            pathToCover: "/resturants images/nithan-thai.svg",
+            starsNumber: 1}},
 
         { resturant:
             {resturantName: 'Nitan Thai', 
@@ -40,14 +45,16 @@ export class AppData
             isPopular: false, 
             isNew: true, 
             isOpen: false, 
-            pathToCover: "/resturants images/nithan-thai.svg"}},
+            pathToCover: "/resturants images/nithan-thai.svg",
+            starsNumber: 4}},
         { resturant:
             {resturantName: 'Claro',
             chefName: "Ran Shmueli", 
             isPopular: false, 
             isNew: true, 
             isOpen: false, 
-            pathToCover: "/resturants images/claro.svg"}},
+            pathToCover: "/resturants images/claro.svg",
+            starsNumber: 1}},
 
         { resturant:
             {resturantName: 'Kab Kem',
@@ -55,7 +62,8 @@ export class AppData
                 isPopular: false, 
                 isNew: false, 
                 isOpen: true, 
-                pathToCover: "/resturants images/Kab kem.svg"}},
+                pathToCover: "/resturants images/Kab kem.svg",
+                starsNumber: 2}},
 
         { resturant:
             {resturantName: 'Messa', 
@@ -63,7 +71,8 @@ export class AppData
             isPopular: true, 
                 isNew: false, 
                 isOpen: true, 
-            pathToCover: "/resturants images/Messa.svg"}},
+            pathToCover: "/resturants images/Messa.svg",
+            starsNumber: 3}},
 
         { resturant:
             {resturantName: 'Nitan Thai', 
@@ -71,7 +80,8 @@ export class AppData
             isPopular: true, 
                 isNew: false, 
                 isOpen: true,  
-            pathToCover: "/resturants images/nithan-thai.svg"}},
+            pathToCover: "/resturants images/nithan-thai.svg",
+            starsNumber: 3}},
 
         { resturant:
             {resturantName: 'Nitan Thai', 
@@ -79,7 +89,8 @@ export class AppData
             isPopular: true, 
                 isNew: false, 
                 isOpen: true, 
-            pathToCover: "/resturants images/nithan-thai.svg"}}
+            pathToCover: "/resturants images/nithan-thai.svg",
+            starsNumber: 4}}
         ];
 
     static dishesArray:{dish: dishCard}[]=[
@@ -115,6 +126,8 @@ export class AppData
             
 
     ];
+
+    static pathToRatingImages: string[] = ['/desktopIcons/oneStar.png', '/desktopIcons/twoStars.png', '/desktopIcons/threeStars.png', '/desktopIcons/fourStars.png', '/desktopIcons/fiveStars.png'];
 
     static pathTospicyBig = "signatuteIcons/spicyBig.svg";
 
@@ -154,6 +167,7 @@ export interface resturantCard{
     isNew:boolean;
     isOpen:boolean;
     pathToCover:string;
+    starsNumber:number;
     
 }
 

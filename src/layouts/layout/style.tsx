@@ -30,7 +30,13 @@ line-height: 24px;
 /* identical to box height, or 133% */
 letter-spacing: 1.25px;
 text-transform: uppercase;
-color: #000000;`
+color: #000000;
+@media screen and (min-width: 600px) {
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+}
+`
 
 export const DivSlide = styled.div`
 width: 100px;`
@@ -44,9 +50,10 @@ align-items: center;
 padding: 0px;
 gap: 12px;
 width: 90%;
-
-
-
+@media screen and (min-width: 600px) {
+    width: 94%;
+    justify-content: flex-end; 
+}
 `
 
 export const DivLeftNavigator = styled.div`

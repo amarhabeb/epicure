@@ -1,23 +1,26 @@
 import React from 'react'
-import { resturantCard} from '../../constants/data'
-import { Div, Img } from '../../layouts/layout/style'
-import { DivResturantCard, DivResturantCardContent, DivResturantChef, DivResturantName } from './style'
+import SetWindowSize from '../../assests/setWindowSize';
+import { AppData, resturantCard} from '../../constants/data'
+import {Div, Img } from '../../layouts/layout/style'
+import { DivDetails, DivResturantCard, DivResturantCardContent, DivResturantChef, DivResturantName } from './style'
 
 export default function ResturantCard(props: resturantCard) {
+  const windowSize = SetWindowSize();
   return (
     
     <DivResturantCard>
             <Img src={props.pathToCover} style={{width:'100%'}} alt={props.resturantName}/>
        
         <DivResturantCardContent>
-            <Div style={{margin: '16px'}}>
+            <DivDetails>
             <DivResturantName>
                 {props.resturantName}
             </DivResturantName>
             <DivResturantChef>
                 {props.chefName}
             </DivResturantChef>
-            </Div>
+            </DivDetails>
+            {(windowSize>=600) && <Img src={AppData.pathToRatingImages[props.starsNumber-1]} style={{width:'57%', marginBottom: '18px'}} alt={props.resturantName}/>}
         </DivResturantCardContent>
        
     </DivResturantCard>

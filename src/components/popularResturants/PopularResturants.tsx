@@ -7,11 +7,13 @@ import {useNavigate } from 'react-router';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import SetWindowSize from '../../assests/setWindowSize'
 
 
 
 export default function PopularResturants() {
   const navigate = useNavigate()
+  const windowSize = SetWindowSize();
   function  navigateToResturantsPage(){
     navigate('src/pages/resturants')
 
@@ -20,7 +22,7 @@ export default function PopularResturants() {
     <Div style={{marginLeft: '5%', width: '95%'}}>
         <Title>popular restaurant in epicure:</Title>
         
-        <DivPopularOnHome>
+        {(windowSize<600) && <DivPopularOnHome>
         <Slider {...settings}>
           {AppData.resturantsArray.filter(res => res.resturant.isPopular).map((resturant, key)=>(
            <ResturantCard key={key}  
@@ -29,14 +31,26 @@ export default function PopularResturants() {
            isPopular={resturant.resturant.isPopular}
            isNew={resturant.resturant.isNew}
            isOpen={resturant.resturant.isOpen}
-           pathToCover={resturant.resturant.pathToCover}/> 
-          
+           pathToCover={resturant.resturant.pathToCover}
+           starsNumber={resturant.resturant.starsNumber}/> 
            
         ))}
         </Slider>
-        
-      
-      </DivPopularOnHome>
+      </DivPopularOnHome>}
+
+      {(windowSize>=600) && <DivPopularOnHome>
+          {AppData.resturantsArray.filter(res => res.resturant.isPopular).map((resturant, key)=>(
+           <ResturantCard key={key}  
+           resturantName={resturant.resturant.resturantName}
+           chefName={resturant.resturant.chefName}
+           isPopular={resturant.resturant.isPopular}
+           isNew={resturant.resturant.isNew}
+           isOpen={resturant.resturant.isOpen}
+           pathToCover={resturant.resturant.pathToCover}
+           starsNumber={resturant.resturant.starsNumber}/> 
+           
+        ))}
+      </DivPopularOnHome>}
       
         
       <DivContainNavigator>

@@ -35,7 +35,8 @@ export default function ChefOfTheWeek() {
            isPopular={resturant.resturant.isPopular}
            isNew={resturant.resturant.isNew}
            isOpen={resturant.resturant.isOpen}
-           pathToCover={resturant.resturant.pathToCover}/> 
+           pathToCover={resturant.resturant.pathToCover}
+           starsNumber={resturant.resturant.starsNumber}/> 
         ))}
         </Slider>
         </DivChefOfTheWeekRestaurants>

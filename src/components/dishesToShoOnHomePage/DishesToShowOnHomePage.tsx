@@ -7,11 +7,13 @@ import { DivDishOnHome } from './style'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import SetWindowSize from '../../assests/setWindowSize'
 
 
 
 export default function DishesToShowOnHomePage() {
     const navigate = useNavigate()
+    const windowSize = SetWindowSize();
     const [dishesToShow, setDisheshTosho] = useState(AppData.dishesArray)
     function  navigateToResturantsPage(){
       navigate('src/pages/resturants')
@@ -20,7 +22,7 @@ export default function DishesToShowOnHomePage() {
     return (
       <Div style={{marginLeft: '5%', width: '95%'}}>
           <Title>Signature Dish Of:</Title>
-          <DivDishOnHome>
+          {(windowSize<600) && <DivDishOnHome>
           <Slider {...settings}>
           {dishesToShow.map((dish, key)=>(
             <Div style={{width: '100%'}}>
@@ -36,7 +38,24 @@ export default function DishesToShowOnHomePage() {
             </Div>
           ))}
           </Slider>
-        </DivDishOnHome>
+        </DivDishOnHome>}
+
+        {(windowSize>=600) && <DivDishOnHome>
+          {dishesToShow.map((dish, key)=>(
+            <Div style={{width: '100%'}}>
+             <SignatureOfDishCard key={key} 
+             dishName={dish.dish.dishName}
+             dishContent={dish.dish.dishContent}
+             isSpicy={dish.dish.isSpicy}
+             isVegitarian={dish.dish.isVegitarian}
+             isVegan={dish.dish.isVegan}
+             pathToCover={dish.dish.pathToCover}
+             price={dish.dish.price}
+             dishTime={dish.dish.dishTime} /> 
+            </Div>
+          ))}
+        </DivDishOnHome>}
+
         <DivContainNavigator>
           <DivLeftNavigator onClick={navigateToResturantsPage}>
             All restaurants

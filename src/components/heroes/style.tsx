@@ -51,7 +51,7 @@ line-height: 32px;
 letter-spacing: 1.97px;
 color: #000000;
 @media screen and (min-width: 600px) {
-    width: 65%;
+    width: 61%;
     height: 36%;
     font-weight: 200;
     font-size: 32px;

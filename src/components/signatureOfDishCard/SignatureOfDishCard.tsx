@@ -1,7 +1,7 @@
 import React from 'react'
 import { AppData, dishCard } from '../../constants/data'
 import { Div, Img } from '../../layouts/layout/style'
-import { DivDishCardContent, DivDishName, DivPrice, DivSignatueDishCard, DivSignature } from './style'
+import { DivDishCardContent, DivDishName, DivPrice, DivSignatueDishCard, DivSignature, DivSignatureAndPrice } from './style'
 
 export default function SignatureOfDishCard(props: dishCard) {
   return (
@@ -16,6 +16,7 @@ export default function SignatureOfDishCard(props: dishCard) {
         <DivDishCardContent>
             {props.dishContent}
         </DivDishCardContent>
+        <DivSignatureAndPrice>
         <DivSignature>
             {props.isSpicy && <Img src={AppData.pathToSpicySmall} style={{width:'30px', height: '23px'}} alt='spicy'/>}
             {props.isVegan && <Img src={AppData.pathToVeganSmall} style={{width:'30px', height: '23px'}} alt='vegan'/>}
@@ -25,6 +26,7 @@ export default function SignatureOfDishCard(props: dishCard) {
         <DivPrice>
             {props.price}
         </DivPrice>
+        </DivSignatureAndPrice>
     </DivDishCardContent>
 </DivSignatueDishCard>
 )}

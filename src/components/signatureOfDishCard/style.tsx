@@ -14,6 +14,7 @@ flex-direction: column;
 align-items: flex-start;
 gap: 16px;
 width: 90%;
+height: 236px;
 margin-left: 16px;
 font-family: 'Helvetica Neue';
 font-style: normal;
@@ -22,6 +23,18 @@ font-size: 16px;
 line-height: 20px;
 letter-spacing: 1.97px;
 color: #000000;
+@media screen and (min-width: 600px) {
+
+    height: 350px;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    text-align: center;
+    align-items: center;
+
+}
 `
 export const DivDishName = styled.div`
 width: 87%;
@@ -35,6 +48,13 @@ letter-spacing: 2.67px;
 margin-left: 16px;
 
 color: #000000;
+@media screen and (min-width: 600px) {
+    
+    
+    font-size: 40px;
+    line-height: 47px;
+
+}
 
 `
 
@@ -45,6 +65,12 @@ align-items: flex-start;
 gap: 10px;
 margin-top: 16px;
 margin-left: 16px;
+
+@media screen and (min-width: 600px) {
+ margin-top: 0px;
+ margin-left: 0px;
+
+}
 `
 export const DivPrice = styled.div`
 width: 20px;
@@ -61,4 +87,26 @@ color: #000000;
 order: 1;
 margin-left: 16px;
 margin-bottom: 16px;
+
+@media screen and (min-width: 600px) {
+    margin-left: 0px;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+    text-align: center;
+    letter-spacing: 1.97px;
+   
+   }
+`
+
+export const DivSignatureAndPrice = styled.div`
+display: flex;
+flex-direction: column;
+gap: 18px;
+@media screen and (min-width: 600px) {
+width: 100%;
+align-content: center;
+align-items: center;   
+   }
 `

@@ -90,9 +90,15 @@ order: 2;
 flex-grow: 1;
 @media screen and (min-width: 600px) {
     width: 65%;
-    font-weight: 200;
-    font-size: 24px;
-    line-height: 29px;
+    font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 200;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+letter-spacing: 1.29px;
+
+color: #000000;
 
 }
 `

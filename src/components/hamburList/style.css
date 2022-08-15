@@ -1,18 +1,8 @@
 
 div{
-    margin-left: 5%;
-    height: 30px;
-     width: 95%;
-    text-align: center;
-    align-self: center;
-    justify-self: center;
-    position: fixed;
-    margin-top: 48px;
-    margin: 5%;
-    justify-content: space-around;
-    background-color: transparent;
-    border: none;
-    align-content: center;
-    margin-bottom: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+flex-direction: row;
     
 }

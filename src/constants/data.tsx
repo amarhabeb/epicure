@@ -60,7 +60,7 @@ export class AppData
         { resturant:
             {resturantName: 'Messa', 
             chefName: "Yossi Shitrit", 
-            isPopular: false, 
+            isPopular: true, 
                 isNew: false, 
                 isOpen: true, 
             pathToCover: "/resturants images/Messa.svg"}},
@@ -68,7 +68,7 @@ export class AppData
         { resturant:
             {resturantName: 'Nitan Thai', 
             chefName: "Yossi Shitrit", 
-            isPopular: false, 
+            isPopular: true, 
                 isNew: false, 
                 isOpen: true,  
             pathToCover: "/resturants images/nithan-thai.svg"}},
@@ -76,7 +76,7 @@ export class AppData
         { resturant:
             {resturantName: 'Nitan Thai', 
             chefName: "Ran Shmueli",
-            isPopular: false, 
+            isPopular: true, 
                 isNew: false, 
                 isOpen: true, 
             pathToCover: "/resturants images/nithan-thai.svg"}}
@@ -85,7 +85,7 @@ export class AppData
     static dishesArray:{dish: dishCard}[]=[
             {dish:
             {   dishName: "Pad Ki Mao",
-                dishContent: "Green Papaya, Mango, Chukka Chili, Mint, Kaffir lime, Cashew, Akaya Cham sauce",
+                dishContent: "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic, Chili Brown Coconut",
                 isSpicy: true,
                 isVegitarian: true,
                 isVegan: true,
@@ -174,3 +174,12 @@ export interface chef{
     about: string;
     pathToChefPicture: string;
 }
+
+export const settings = {
+    className: "center",
+    centerMode: false,
+    infinite: false,
+    centerPadding: "10px",
+    slidesToShow:1.5,
+    speed: 500
+  };

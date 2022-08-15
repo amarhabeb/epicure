@@ -11,7 +11,7 @@ export default function SearchBar(props: UpdateOpen) {
   return (
     <DivSearchBar>
         <HeaderSearchBar>
-            <Button onClick={closeSearchBar}>
+            <Button style={{marginLeft: '5%'}} onClick={closeSearchBar}>
                 <Img src='/icons/BlackX.png' alt='blackx'/>
             </Button>  
             <SearchTerm>Search</SearchTerm>     
@@ -22,7 +22,7 @@ export default function SearchBar(props: UpdateOpen) {
                    <Img src='/icons/search.svg' alt='search'/> 
                 </SearchButton>
             
-            <SearchInput type="text" placeholder="Search for restaurant cuisine, chef"/>
+            <SearchInput type="text" placeholder="Search for restaurant cuisine, chef" style={{borderLeft: '0.5px solid #000000'}}/>
 
             </DivSearch>
         </DivBodySearchBar>

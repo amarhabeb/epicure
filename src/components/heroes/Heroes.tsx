@@ -10,7 +10,7 @@ export default function Heroes() {
           <DivModalConten>
             Epicure works with the top chef restaurants in Tel Aviv
           </DivModalConten>
-          <DivSearch style={{margin: '3%'}}>
+          <DivSearch style={{marginBottom: '16px'}}>
                 <SearchButton>
                    <Img src='icons/search.svg' alt='search'/> 
                 </SearchButton>

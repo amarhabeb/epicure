@@ -7,34 +7,34 @@ import { DivAll, DivFilterRestaurantsBar, DivNew, DivOpen, DivPopular, DivRestau
 
 export default function Resturants() {
   const [restaurantsToShow, setRestaurantsToShow] = useState(AppData.resturantsArray)
-  const [witchActive, setWitchActive] = useState('all')
+  const [wichActive, setWichActive] = useState('all')
   function allClicked(){
     setRestaurantsToShow(AppData.resturantsArray);
-    setWitchActive('all');
+    setWichActive('all');
   }
 
   function newClicked(){
     setRestaurantsToShow(AppData.resturantsArray.filter(res => res.resturant.isNew));
-    setWitchActive('new');
+    setWichActive('new');
   }
 
   function popularClicked(){
     setRestaurantsToShow(AppData.resturantsArray.filter(res => res.resturant.isPopular));
-    setWitchActive('popular');
+    setWichActive('popular');
   }
 
   function openClicked(){
     setRestaurantsToShow(AppData.resturantsArray.filter(res => res.resturant.isOpen));
-    setWitchActive('open');
+    setWichActive('open');
   }
   return (
     <DivRestaurantsPage>
       <Title style={{marginBottom: '27px', marginTop: '60px'}}>Restaurants</Title>
       <DivFilterRestaurantsBar>
-        <DivAll onClick={allClicked} whitchActive = {witchActive}>All</DivAll>
-        <DivNew onClick={newClicked} whitchActive = {witchActive}>New</DivNew>
-        <DivPopular onClick={popularClicked} whitchActive = {witchActive}>Most Popular</DivPopular>
-        <DivOpen onClick={openClicked} whitchActive = {witchActive}>Open Now</DivOpen>
+        <DivAll onClick={allClicked} whichActive = {wichActive}>All</DivAll>
+        <DivNew onClick={newClicked} whichActive = {wichActive}>New</DivNew>
+        <DivPopular onClick={popularClicked} whichActive = {wichActive}>Most Popular</DivPopular>
+        <DivOpen onClick={openClicked} whichActive = {wichActive}>Open Now</DivOpen>
       </DivFilterRestaurantsBar>
       <DivRestaurantsInPage>
       {restaurantsToShow.map((resturant, key)=>(

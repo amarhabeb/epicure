@@ -5,7 +5,7 @@ export const DivHamburList = styled.div`
     flex-direction: column;
     position: fixed;
     align-items: flex-start;
-    padding: 40px 12px 24px 20px;
+    padding: 15.5px 24px 24px 20px;
     gap: 24px;
     left: -1px;
     width: 100%;
@@ -21,6 +21,9 @@ export const DivHamburList = styled.div`
     export const Line = styled.div`
     border-bottom: 1px solid #F2F2F2;
     width: 100%;
-    margin-top: 33px;`
+    margin-top: 40px;
+    margin-bottum: 33px;
+    margin-left: -5%;
+    `
 
     

@@ -1,9 +1,12 @@
 import React from 'react'
 import { useNavigate } from 'react-router'
-import { AppData } from '../../constants/data'
+import { AppData, settings } from '../../constants/data'
 import { DivContainNavigator, DivLeftNavigator, Img, Title } from '../../layouts/layout/style'
 import ResturantCard from '../resturantCard/ResturantCard'
 import { DivAboutTheCef, DivChefOfTheWeek, DivChefOfTheWeekContent, DivChefOfTheWeekName, DivChefOfTheWeekRestaurants, DivChefPicture } from './style'
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 export default function ChefOfTheWeek() {
   const navigate = useNavigate()
@@ -24,6 +27,7 @@ export default function ChefOfTheWeek() {
         </DivChefOfTheWeekContent>
         <Title>{AppData.chefOfTheWeek.firstName}`s Restaurants</Title>
         <DivChefOfTheWeekRestaurants>
+        <Slider {...settings}>
         {AppData.resturantsArray.filter(res => res.resturant.chefName===AppData.chefOfTheWeek.chefName).map((resturant, key)=>(
            <ResturantCard key={key} 
            resturantName={resturant.resturant.resturantName}
@@ -33,6 +37,7 @@ export default function ChefOfTheWeek() {
            isOpen={resturant.resturant.isOpen}
            pathToCover={resturant.resturant.pathToCover}/> 
         ))}
+        </Slider>
         </DivChefOfTheWeekRestaurants>
         <DivContainNavigator>
         <DivLeftNavigator onClick={navigateToResturantsPage}>

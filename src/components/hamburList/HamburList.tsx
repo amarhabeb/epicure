@@ -12,18 +12,21 @@ export default function HamburList(props: UpdateOpen) {
     function  navigateToHomePage(){
         navigate('/')
         props.CloseMenu(false)
+        window.scrollTo(0,0);
     
     }
 
     function  navigateToResturantsPage(){
         navigate('src/pages/resturants')
         props.CloseMenu(false)
+        window.scrollTo(0,0);
     
     }
 
     function  navigateToChefsPage(){
         navigate('src/pages/chefs')
         props.CloseMenu(false)
+        window.scrollTo(0,0);
     
     }
     function  closeHambulList(){

@@ -1,19 +1,14 @@
 import styled from 'styled-components'
 
 export const DivResturantCard = styled.div`
+width: 88%;
 `
 
 export const DivResturantCardContent = styled.div`
+background-color: #F9F4EA;
+width: 100%px;
+height: 81px; 
 display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 16px;
-gap: 10px;
-height: 81px;
-background: #F9F4EA;
-order: 12;
-align-self: stretch;
-flex-grow: 0;
 `
 
 export const DivResturantName = styled.div`
@@ -24,6 +19,7 @@ font-weight: 400;
 font-size: 18px;
 line-height: 21px;
 letter-spacing: 2.67px;
+margin-bottom: 8px;
 color: #000000;
 `
 

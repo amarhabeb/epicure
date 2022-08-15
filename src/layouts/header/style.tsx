@@ -12,4 +12,5 @@ top: 0%;
 bottom: 0%;
 height: 45px;
 background: #FFFFFF;
+z-index: 10;
 `

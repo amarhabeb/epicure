@@ -9,8 +9,9 @@ gap: 32px;
 width: 100%;
 background: #FAFAFA;
 `
+
 export const DivAboutFirstParagraph = styled.div`
-width: 100%;
+width: 88%;
 left: 19px;
 top: 3266px;
 

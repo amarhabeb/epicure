@@ -13,29 +13,47 @@ width: 100%;
 position: unset;`
 
 export interface DivProps{
-    whitchActive: string;
+    whichActive: string;
     
 }
 
 export const DivAll = styled.div<DivProps>`
-text-decoration: ${props=> props.whitchActive==='all'? 'underline': "none"};
-text-decoration-color: ${props=> props.whitchActive==='all'? '#DE9200': "none"};
-font-weight: ${props=> props.whitchActive==='all'? 'bold': "none"};
+text-decoration: ${props=> props.whichActive==='all'? 'underline': "none"};
+text-decoration-color: ${props=> props.whichActive==='all'? '#DE9200': "none"};
+font-weight: ${props=> props.whichActive==='all'? 'bold': "none"};
+@media screen and (min-width: 600px) {
+    text-decoration: none;
+
+}
+
+
 `
 export const DivNew = styled.div<DivProps>`
-text-decoration: ${props=> props.whitchActive==='new'? 'underline': "none"};
-text-decoration-color: ${props=> props.whitchActive==='new'? '#DE9200': "none"};
-font-weight: ${props=> props.whitchActive==='new'? 'bold': "none"};
+text-decoration: ${props=> props.whichActive==='new'? 'underline': "none"};
+text-decoration-color: ${props=> props.whichActive==='new'? '#DE9200': "none"};
+font-weight: ${props=> props.whichActive==='new'? 'bold': "none"};
+@media screen and (min-width: 600px) {
+    text-decoration: none;
+
+}
 `
 export const DivPopular = styled.div<DivProps>`
-text-decoration: ${props=> props.whitchActive==='popular'? 'underline': "none"};
-text-decoration-color: ${props=> props.whitchActive==='popular'? '#DE9200': "none"};
-font-weight: ${props=> props.whitchActive==='popular'? 'bold': "none"};
+text-decoration: ${props=> props.whichActive==='popular'? 'underline': "none"};
+text-decoration-color: ${props=> props.whichActive==='popular'? '#DE9200': "none"};
+font-weight: ${props=> props.whichActive==='popular'? 'bold': "none"};
+@media screen and (min-width: 600px) {
+    text-decoration: none;
+
+}
 `
 export const DivOpen = styled.div<DivProps>`
-text-decoration: ${props=> props.whitchActive==='open'? 'underline': "none"};
-text-decoration-color: ${props=> props.whitchActive==='open'? '#DE9200': "none"};
-font-weight: ${props=> props.whitchActive==='open'? 'bold': "none"};
+text-decoration: ${props=> props.whichActive==='open'? 'underline': "none"};
+text-decoration-color: ${props=> props.whichActive==='open'? '#DE9200': "none"};
+font-weight: ${props=> props.whichActive==='open'? 'bold': "none"};
+@media screen and (min-width: 600px) {
+    text-decoration: none;
+
+}
 `
 
 export const DivFilterRestaurantsBar = styled.div`

@@ -6,16 +6,19 @@ export default function Navigator() {
 const navigate = useNavigate()
 
 function  navigateToContactUs(){
-    navigate('src/pages/contactUs')
+    navigate('src/pages/contactUs');
+    window.scrollTo(0,0);
 
 }
 
 function  navigateToTermOfUse(){
 navigate('src/pages/termOfUse')
+window.scrollTo(0,0);
     }
 
 function  navigateToPrivacyPolicy(){
 navigate('src/pages/privacyPolicy')
+window.scrollTo(0,0);
 
 }
   return (

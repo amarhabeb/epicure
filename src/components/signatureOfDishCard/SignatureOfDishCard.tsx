@@ -6,9 +6,9 @@ import { DivDishCardContent, DivDishName, DivPrice, DivSignatueDishCard, DivSign
 export default function SignatureOfDishCard(props: dishCard) {
   return (
     <DivSignatueDishCard>
-    <Div>
-        <Img src={props.pathToCover} style={{width:'245px'}} alt={props.dishName}/>
-    </Div>
+   
+    <Img src={props.pathToCover} style={{width:'100%'}} alt={props.dishName}/>
+
     <DivDishCardContent>
         <DivDishName>
             {props.dishName}

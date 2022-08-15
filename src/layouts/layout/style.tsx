@@ -11,6 +11,7 @@ export const DivLayOut = styled.div`
 
 export const Button = styled.button`
 background-color: transparent;
+cursor: pointer;
 border: none;
 `
 

@@ -1,9 +1,14 @@
 
 div{
+ display: flex;
+ flex-direction: column-reverse;
+ justify-content: space-between;
+ align-self: flex-end;
+
+ @media screen and (min-width: 600px) {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-flex-direction: row;
-text-align: center;
-    
+  flex-direction: row-reverse;
+  margin-left: 9%;
+}
+cursor: pointer;
 }

@@ -10,6 +10,7 @@ gap: 32px;
 width: 100%;
 height: 584px;
 background: #FAFAFA;
+margin-top: 100px;
 @media screen and (min-width: 600px) {
     height: 265px;
 }

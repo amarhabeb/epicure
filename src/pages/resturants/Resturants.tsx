@@ -3,7 +3,7 @@ import SetWindowSize from '../../assests/setWindowSize'
 import RestaurantCardInRestaurantsPage from '../../components/restaurantCardInRestaurantPage/RestaurantCardInRestaurantsPage'
 import { AppData } from '../../constants/data'
 import { Img, Title } from '../../layouts/layout/style'
-import { DivAll, DivFilterRestaurantsBar, DivMap, DivNew, DivOpen, DivPopular, DivRestaurantsInPage, DivRestaurantsPage } from './style'
+import { DivAll, DivFilterRestaurantsBar, DivMap, DivNew, DivOpen, DivPopular, DivRestaurantsInPage, DivRestaurantsPage, DivSelect } from './style'
 
 
 export default function Resturants() {
@@ -36,7 +36,7 @@ export default function Resturants() {
   }
   return (
     <DivRestaurantsPage>
-      <Title style={{marginBottom: '27px', marginTop: '60px'}}>Restaurants</Title>
+      {(windowSize<600) && <Title style={{marginBottom: '27px', marginTop: '60px'}}>Restaurants</Title>}
       <DivFilterRestaurantsBar>
         <DivAll onClick={allClicked} whichActive = {wichActive}>All</DivAll>
         <DivNew onClick={newClicked} whichActive = {wichActive}>New</DivNew>
@@ -44,6 +44,9 @@ export default function Resturants() {
         <DivOpen onClick={openClicked} whichActive = {wichActive}>Open Now</DivOpen>
         {(windowSize>=600) && <DivMap onClick={mapClicked} whichActive = {wichActive}>Map View</DivMap>}
       </DivFilterRestaurantsBar>
+      {(windowSize>=600)&& (false) && <DivSelect>
+        aa
+      </DivSelect>}
       {(wichActive==="map") && <Img src='/desktop/map.png' alt='mapPic'/>}
       {(wichActive !="map") && <DivRestaurantsInPage>
       {restaurantsToShow.map((resturant, key)=>(

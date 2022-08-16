@@ -8,6 +8,7 @@ margin-top: 48px;
 gap: 32px;
 width: 100%;
 background: #FAFAFA;
+margin-top: 100px
 `
 
 export const DivAboutFirstParagraph = styled.div`

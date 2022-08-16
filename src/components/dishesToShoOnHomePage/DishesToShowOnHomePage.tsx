@@ -55,13 +55,6 @@ export default function DishesToShowOnHomePage() {
             </Div>
           ))}
         </DivDishOnHome>}
-
-        <DivContainNavigator>
-          <DivLeftNavigator onClick={navigateToResturantsPage}>
-            All restaurants
-          </DivLeftNavigator>
-          <Img src='icons/nav.png' alt='navigate' onClick={navigateToResturantsPage} style={{cursor: 'pointer'}} />
-        </DivContainNavigator>
       </Div>
   
     )

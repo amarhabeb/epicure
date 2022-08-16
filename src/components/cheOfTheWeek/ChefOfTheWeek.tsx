@@ -56,13 +56,6 @@ export default function ChefOfTheWeek() {
            starsNumber= {0}/> 
         ))}
         </DivChefOfTheWeekRestaurants>}
-        
-        <DivContainNavigator>
-        <DivLeftNavigator onClick={navigateToResturantsPage}>
-          All restaurants
-        </DivLeftNavigator>
-        <Img src='icons/nav.png' alt='navigate' onClick={navigateToResturantsPage} style={{cursor: 'pointer'}} />
-      </DivContainNavigator>
     </DivChefOfTheWeek>
   )
 }

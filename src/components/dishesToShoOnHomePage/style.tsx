@@ -14,7 +14,7 @@ position: relative;
     grid-template-columns: repeat(auto-fill,minmax(max(var(--grid-item--min-width),var(--grid-item--max-width)),1fr));
     width: 95%;
     border-radius: [object Object]px;
-    margin: 0 auto;
+    margin-bottom: 0 auto;
     grid-gap: 24px;
 }
 `

@@ -27,6 +27,18 @@ position: unset;
 }
 `
 
+export const DivSelect = styled.div`
+width: 100%;
+height: 60px;
+background: #FAFAFA;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-top: 40px;
+margin-bottom: 40px;
+`
+
 export interface DivProps{
     whichActive: string;
     

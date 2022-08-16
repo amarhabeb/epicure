@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
+import SetWindowSize from '../../assests/setWindowSize'
 import RestaurantCardInRestaurantsPage from '../../components/restaurantCardInRestaurantPage/RestaurantCardInRestaurantsPage'
 import { AppData } from '../../constants/data'
-import { Title } from '../../layouts/layout/style'
-import { DivAll, DivFilterRestaurantsBar, DivNew, DivOpen, DivPopular, DivRestaurantsInPage, DivRestaurantsPage } from './style'
+import { Img, Title } from '../../layouts/layout/style'
+import { DivAll, DivFilterRestaurantsBar, DivMap, DivNew, DivOpen, DivPopular, DivRestaurantsInPage, DivRestaurantsPage } from './style'
 
 
 export default function Resturants() {
+  const windowSize = SetWindowSize();
   const [restaurantsToShow, setRestaurantsToShow] = useState(AppData.resturantsArray)
   const [wichActive, setWichActive] = useState('all')
   function allClicked(){
@@ -27,6 +29,11 @@ export default function Resturants() {
     setRestaurantsToShow(AppData.resturantsArray.filter(res => res.resturant.isOpen));
     setWichActive('open');
   }
+
+  function mapClicked(){
+    setRestaurantsToShow(AppData.resturantsArray);
+    setWichActive('map');
+  }
   return (
     <DivRestaurantsPage>
       <Title style={{marginBottom: '27px', marginTop: '60px'}}>Restaurants</Title>
@@ -35,8 +42,10 @@ export default function Resturants() {
         <DivNew onClick={newClicked} whichActive = {wichActive}>New</DivNew>
         <DivPopular onClick={popularClicked} whichActive = {wichActive}>Most Popular</DivPopular>
         <DivOpen onClick={openClicked} whichActive = {wichActive}>Open Now</DivOpen>
+        {(windowSize>=600) && <DivMap onClick={mapClicked} whichActive = {wichActive}>Map View</DivMap>}
       </DivFilterRestaurantsBar>
-      <DivRestaurantsInPage>
+      {(wichActive==="map") && <Img src='/desktop/map.png' alt='mapPic'/>}
+      {(wichActive !="map") && <DivRestaurantsInPage>
       {restaurantsToShow.map((resturant, key)=>(
            <RestaurantCardInRestaurantsPage key={key} 
            resturantName={resturant.resturant.resturantName}
@@ -47,7 +56,7 @@ export default function Resturants() {
            pathToCover={resturant.resturant.pathToCover}
            starsNumber={resturant.resturant.starsNumber}/> 
         ))}
-      </DivRestaurantsInPage>
+      </DivRestaurantsInPage>}
       
     </DivRestaurantsPage>
   )

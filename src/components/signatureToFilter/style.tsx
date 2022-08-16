@@ -9,8 +9,12 @@ text-align: center;
 gap: 32px;
 width: 100%;
 height: 584px;
-
 background: #FAFAFA;
+@media screen and (min-width: 600px) {
+    height: 265px;
+}
+
+
 `
 export const TitleSignatureToFilter = styled.div`
 width: 136px;
@@ -32,3 +36,17 @@ color: #000000;
 flex: none;
 order: 1;
 flex-grow: 0;`
+
+export const DivIcons = styled.div`
+height: 470px;
+@media screen and (min-width: 600px) {
+    height: 265px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+
+}
+`

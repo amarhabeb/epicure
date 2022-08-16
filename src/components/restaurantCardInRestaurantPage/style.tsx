@@ -16,6 +16,12 @@ background: #F9F4EA;
 order: 12;
 align-self: stretch;
 flex-grow: 0;
+@media screen and (min-width: 600px) {
+    height: 169px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 `
 export const DivResturantNameInRestaurantsPage = styled.div`
 height: 21px;
@@ -26,6 +32,10 @@ font-size: 18px;
 line-height: 21px;
 letter-spacing: 2.67px;
 color: #000000;
+@media screen and (min-width: 600px) {
+    font-size: 40px;
+    line-height: 47px;
+}
 `
 export const DivResturantChefInRestaurantsPage = styled.div`
 height: 20px;
@@ -43,4 +53,8 @@ color: #000000;
 flex: none;
 order: 1;
 flex-grow: 0;
+@media screen and (min-width: 600px) {
+    font-size: 24px;
+    line-height: 30px;
+}
 `

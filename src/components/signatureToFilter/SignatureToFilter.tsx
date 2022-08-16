@@ -1,7 +1,7 @@
 import React from 'react'
 import { AppData } from '../../constants/data'
 import { Div, Img, Title } from '../../layouts/layout/style'
-import { DivSignatueToFilter, TitleSignatureToFilter } from './style'
+import { DivIcons, DivSignatueToFilter, TitleSignatureToFilter } from './style'
 
 export default function SignatureToFilter() {
   function filterToSpicy(){
@@ -19,8 +19,8 @@ export default function SignatureToFilter() {
   return (
 
     <DivSignatueToFilter>
-        <Title> Signature Dish Of: </Title>
-        <Div style={{height: '470px'}}>
+        <Title> THE MEANING OF OUR ICONS: </Title>
+        <DivIcons>
         <Div style={{height: '127px', cursor: 'pointer'}} onClick={filterToSpicy}>  
          <Img src={AppData.pathTospicyBig} alt='spicy'/>
          <TitleSignatureToFilter>Spicy</TitleSignatureToFilter>
@@ -33,7 +33,7 @@ export default function SignatureToFilter() {
          <Img src={AppData.pathToVegetarianBig} alt={'vegetarian'}/>
          <TitleSignatureToFilter>Vegetarian</TitleSignatureToFilter>
         </Div>
-      </Div>
+      </DivIcons>
 
     </DivSignatueToFilter>
     

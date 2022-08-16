@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+
 export const DivResturantCard = styled.div`
 width: 88%;
 `
@@ -66,6 +67,7 @@ height: 100%;
     gap: 24px;
     text-align: center;
     align-items: center;
+    justify-content: center;
 }
 
 `

@@ -15,7 +15,8 @@ export default function PopularResturants() {
   const navigate = useNavigate()
   const windowSize = SetWindowSize();
   function  navigateToResturantsPage(){
-    navigate('src/pages/resturants')
+    navigate('src/pages/resturants');
+    window.scrollTo(0,0)
 
 }
   return (

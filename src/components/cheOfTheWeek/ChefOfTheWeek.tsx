@@ -7,9 +7,11 @@ import { DivAboutTheCef, DivChefOfTheWeek, DivChefOfTheWeekContent, DivChefOfThe
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import SetWindowSize from '../../assests/setWindowSize'
 
 export default function ChefOfTheWeek() {
   const navigate = useNavigate()
+  const windowSize = SetWindowSize();
   function  navigateToResturantsPage(){
     navigate('src/pages/resturants')
 
@@ -25,8 +27,9 @@ export default function ChefOfTheWeek() {
             {AppData.chefOfTheWeek.about}
         </DivAboutTheCef>
         </DivChefOfTheWeekContent>
-        <Title>{AppData.chefOfTheWeek.firstName}`s Restaurants</Title>
-        <DivChefOfTheWeekRestaurants>
+        <Title style={{textAlign: 'start', marginLeft: '3%'}}>{AppData.chefOfTheWeek.firstName}`s Restaurants</Title>
+        
+        {(windowSize<600)  && <DivChefOfTheWeekRestaurants>
         <Slider {...settings}>
         {AppData.resturantsArray.filter(res => res.resturant.chefName===AppData.chefOfTheWeek.chefName).map((resturant, key)=>(
            <ResturantCard key={key} 
@@ -39,7 +42,21 @@ export default function ChefOfTheWeek() {
            starsNumber={resturant.resturant.starsNumber}/> 
         ))}
         </Slider>
-        </DivChefOfTheWeekRestaurants>
+        </DivChefOfTheWeekRestaurants>}
+
+        {(windowSize>=600)  && <DivChefOfTheWeekRestaurants>
+        {AppData.resturantsArray.filter(res => res.resturant.chefName===AppData.chefOfTheWeek.chefName).map((resturant, key)=>(
+           <ResturantCard key={key} 
+           resturantName={resturant.resturant.resturantName}
+           chefName=''
+           isPopular={resturant.resturant.isPopular}
+           isNew={resturant.resturant.isNew}
+           isOpen={resturant.resturant.isOpen}
+           pathToCover={resturant.resturant.pathToCover}
+           starsNumber= {0}/> 
+        ))}
+        </DivChefOfTheWeekRestaurants>}
+        
         <DivContainNavigator>
         <DivLeftNavigator onClick={navigateToResturantsPage}>
           All restaurants

@@ -18,4 +18,13 @@ export const DivFooter = styled.div`
     width: 100%;
     margin-top: 33px;
     cursor: pointer;
+    @media screen and (min-width: 600px) {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 40px;
+        letter-spacing: 1.92px;
+        justify-content: center;
+    
+    }
     `

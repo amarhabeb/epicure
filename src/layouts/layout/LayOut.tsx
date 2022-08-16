@@ -13,7 +13,6 @@ import Chefs from '../../pages/chefs/Chefs';
 
 
 export default function LayOut() {
-  console.log(window.innerWidth);
   return (
     <DivLayOut style={{width: 'window.innerWidth', marginTop: '0'}}>
     <BrowserRouter>

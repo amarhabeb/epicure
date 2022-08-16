@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router'
+import React from 'react'
 import { AppData, settings } from '../../constants/data'
-import { Div, DivContainNavigator, DivLeftNavigator, Img, Title } from '../../layouts/layout/style'
+import { Div, Title } from '../../layouts/layout/style'
 import SignatureOfDishCard from '../signatureOfDishCard/SignatureOfDishCard'
 import { DivDishOnHome } from './style'
 import Slider from 'react-slick';
@@ -12,13 +11,8 @@ import SetWindowSize from '../../assests/setWindowSize'
 
 
 export default function DishesToShowOnHomePage() {
-    const navigate = useNavigate()
     const windowSize = SetWindowSize();
-    const [dishesToShow, setDisheshTosho] = useState(AppData.dishesArray)
-    function  navigateToResturantsPage(){
-      navigate('src/pages/resturants')
-  
-  }
+    const dishesToShow = AppData.dishesArray;
     return (
       <Div style={{marginLeft: '5%', width: '95%'}}>
           <Title>Signature Dish Of:</Title>

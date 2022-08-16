@@ -48,7 +48,7 @@ export default function Resturants() {
         aa
       </DivSelect>}
       {(wichActive==="map") && <Img src='/desktop/map.png' alt='mapPic'/>}
-      {(wichActive !="map") && <DivRestaurantsInPage>
+      {(wichActive !=="map") && <DivRestaurantsInPage>
       {restaurantsToShow.map((resturant, key)=>(
            <RestaurantCardInRestaurantsPage key={key} 
            resturantName={resturant.resturant.resturantName}

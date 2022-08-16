@@ -1,7 +1,6 @@
 import React from 'react'
-import { useNavigate } from 'react-router'
 import { AppData, settings } from '../../constants/data'
-import { DivContainNavigator, DivLeftNavigator, Img, Title } from '../../layouts/layout/style'
+import { Title } from '../../layouts/layout/style'
 import ResturantCard from '../resturantCard/ResturantCard'
 import { DivAboutTheCef, DivChefOfTheWeek, DivChefOfTheWeekContent, DivChefOfTheWeekName, DivChefOfTheWeekRestaurants, DivChefPicture } from './style'
 import Slider from 'react-slick';
@@ -10,12 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import SetWindowSize from '../../assests/setWindowSize'
 
 export default function ChefOfTheWeek() {
-  const navigate = useNavigate()
   const windowSize = SetWindowSize();
-  function  navigateToResturantsPage(){
-    navigate('src/pages/resturants')
-
-}
   return (
     <DivChefOfTheWeek>
         <Title>Chef of the week:</Title>

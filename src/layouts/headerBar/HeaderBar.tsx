@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router'
-import { useTheme } from 'styled-components'
 import SetWindowSize from '../../assests/setWindowSize'
 import { Button, Div, Img } from '../layout/style'
 import {DesktopHeaderNavigatorChef, DesktopHeaderNavigatorRes, DivDesktopHeaderBar, DivHeaderBar, DivLogo, DivToRestaurants } from './style'

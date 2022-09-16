@@ -1,26 +1,80 @@
 export class AppData
 {
-    
-    static resturantsArray:{resturant: resturantCard}[]=[
-        { resturant:
+    static dishesArray: dishCard[]=[
+        {   dishName: "Pad Ki Mao",
+            dishContent: "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic, Chili Brown Coconut",
+            restaurantName: 'Claro',
+            isSpicy: true,
+            isVegitarian: true,
+            isVegan: true,
+            pathToCover: "/resturants images/nithan-thai.svg",
+            price: 88,
+            dishTime: "Breakfast"},
+        
+            {   dishName: "ad Ki Mao",
+                dishContent: "Green Papaya, Mango, Chukka Chili, Mint, Kaffir lime, Cashew, Akaya Cham sauce",
+                restaurantName: 'Claro',
+                isSpicy: true,
+                isVegitarian: true,
+                isVegan: false,
+                pathToCover: "/resturants images/nithan-thai.svg",
+                price: 88,
+                dishTime: "Breakfast"},
+
+                {   dishName: "bbbb",
+                dishContent: "Green Papaya, Mango, Chukka Chili, Mint, Kaffir lime, Cashew, Akaya Cham sauce",
+                restaurantName: 'Claro',
+                isSpicy: true,
+                isVegitarian: true,
+                isVegan: false,
+                pathToCover: "/resturants images/nithan-thai.svg",
+                price: 88,
+                dishTime: "Breakfast"},
+
+                {   dishName: "bbbb",
+                dishContent: "Green Papaya, Mango, Chukka Chili, Mint, Kaffir lime, Cashew, Akaya Cham sauce",
+                restaurantName: 'Claro',
+                isSpicy: true,
+                isVegitarian: true,
+                isVegan: false,
+                pathToCover: "/resturants images/nithan-thai.svg",
+                price: 88,
+                dishTime: "Lanch"},
+
+                {   dishName: "bbbb",
+                dishContent: "Green Papaya, Mango, Chukka Chili, Mint, Kaffir lime, Cashew, Akaya Cham sauce",
+                restaurantName: 'Claro',
+                isSpicy: true,
+                isVegitarian: true,
+                isVegan: false,
+                pathToCover: "/resturants images/nithan-thai.svg",
+                price: 88,
+                dishTime: "Dinner"}
+
+];
+
+    static resturantsArray:resturantCard[]=[
+         
             {resturantName: 'Claro',
             chefName: "Ran Shmueli", 
             isPopular: true, 
             isNew: false, 
             isOpen: false, 
             pathToCover: "/resturants images/claro.svg",
-            starsNumber: 5}},
+            starsNumber: 5,
+            dishes: this.dishesArray},
 
-        { resturant:
+        
             {resturantName: 'Kab Kem',
              chefName: "Yariv Malili", 
              isPopular: true, 
             isNew: false, 
             isOpen: false, 
              pathToCover: "/resturants images/Kab kem.svg",
-             starsNumber: 4}},
+             starsNumber: 4,
+             dishes: this.dishesArray},
 
-        { resturant:
+       
             {resturantName: 'Messa', 
             chefName: "Aviv Moshe", 
             isPopular: true, 
@@ -28,104 +82,80 @@ export class AppData
             isOpen: false, 
             pathToCover: "/resturants images/Messa.svg"
             ,
-            starsNumber: 5}},
+            starsNumber: 5,
+            dishes: this.dishesArray},
 
-        { resturant:
+        
             {resturantName: 'Nitan Thai', 
             chefName: "Shahaf Shabtay", 
             isPopular: false, 
             isNew: true, 
             isOpen: false, 
             pathToCover: "/resturants images/nithan-thai.svg",
-            starsNumber: 1}},
+            starsNumber: 1,
+            dishes: this.dishesArray},
 
-        { resturant:
+        
             {resturantName: 'Nitan Thai', 
             chefName: "Shahaf Shabtay", 
             isPopular: false, 
             isNew: true, 
             isOpen: false, 
             pathToCover: "/resturants images/nithan-thai.svg",
-            starsNumber: 4}},
-        { resturant:
+            starsNumber: 4,
+            dishes: this.dishesArray},
+        
             {resturantName: 'Claro',
             chefName: "Ran Shmueli", 
             isPopular: false, 
             isNew: true, 
             isOpen: false, 
             pathToCover: "/resturants images/claro.svg",
-            starsNumber: 1}},
+            starsNumber: 1,
+            dishes: this.dishesArray},
 
-        { resturant:
+        
             {resturantName: 'Kab Kem',
                 chefName: "Yossi Shitrit", 
                 isPopular: false, 
                 isNew: false, 
                 isOpen: true, 
                 pathToCover: "/resturants images/Kab kem.svg",
-                starsNumber: 2}},
+                starsNumber: 2,
+                dishes: this.dishesArray},
 
-        { resturant:
+        
             {resturantName: 'Messa', 
             chefName: "Yossi Shitrit", 
             isPopular: true, 
                 isNew: false, 
                 isOpen: true, 
             pathToCover: "/resturants images/Messa.svg",
-            starsNumber: 3}},
+            starsNumber: 3,
+            dishes: this.dishesArray},
 
-        { resturant:
+        
             {resturantName: 'Nitan Thai', 
             chefName: "Yossi Shitrit", 
             isPopular: true, 
                 isNew: false, 
                 isOpen: true,  
             pathToCover: "/resturants images/nithan-thai.svg",
-            starsNumber: 3}},
+            starsNumber: 3,
+            dishes: this.dishesArray},
 
-        { resturant:
+        
             {resturantName: 'Nitan Thai', 
             chefName: "Ran Shmueli",
             isPopular: true, 
                 isNew: false, 
                 isOpen: true, 
             pathToCover: "/resturants images/nithan-thai.svg",
-            starsNumber: 4}}
+            starsNumber: 4,
+            dishes: this.dishesArray}
         ];
 
-    static dishesArray:{dish: dishCard}[]=[
-            {dish:
-            {   dishName: "Pad Ki Mao",
-                dishContent: "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic, Chili Brown Coconut",
-                isSpicy: true,
-                isVegitarian: true,
-                isVegan: true,
-                pathToCover: "resturants images/nithan-thai.svg",
-                price: 88,
-                dishTime: "Breakfast"}},
-            
-            {dish:
-                {   dishName: "Pad Ki Mao",
-                    dishContent: "Green Papaya, Mango, Chukka Chili, Mint, Kaffir lime, Cashew, Akaya Cham sauce",
-                    isSpicy: true,
-                    isVegitarian: true,
-                    isVegan: false,
-                    pathToCover: "resturants images/nithan-thai.svg",
-                    price: 88,
-                    dishTime: "Breakfast"}},
-            {dish:
-                {   dishName: "Pad Ki Mao",
-                    dishContent: "Green Papaya, Mango, Chukka Chili, Mint, Kaffir lime, Cashew, Akaya Cham sauce",
-                    isSpicy: true,
-                    isVegitarian: true,
-                    isVegan: false,
-                    pathToCover: "resturants images/nithan-thai.svg",
-                    price: 88,
-                    dishTime: "Breakfast"}}
-
-            
-
-    ];
+    
 
     static pathToRatingImages: string[] = ['/desktopIcons/oneStar.png', '/desktopIcons/twoStars.png', '/desktopIcons/threeStars.png', '/desktopIcons/fourStars.png', '/desktopIcons/fiveStars.png'];
 
@@ -168,11 +198,13 @@ export interface resturantCard{
     isOpen:boolean;
     pathToCover:string;
     starsNumber:number;
+    dishes: dishCard[];
     
 }
 
 export interface dishCard{
     dishName:string;
+    restaurantName: string;
     dishContent:string;
     isSpicy:boolean;
     isVegitarian:boolean;

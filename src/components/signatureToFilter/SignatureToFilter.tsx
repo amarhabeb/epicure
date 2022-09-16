@@ -5,7 +5,7 @@ import { DivIcons, DivSignatueToFilter, TitleSignatureToFilter } from './style'
 
 export default function SignatureToFilter() {
   function filterToSpicy(){
-    AppData.dishesArray = AppData.dishesArray.filter(dish => dish.dish.isVegan)
+    AppData.dishesArray = AppData.dishesArray.filter(dish => dish.isVegan)
 
   }
 

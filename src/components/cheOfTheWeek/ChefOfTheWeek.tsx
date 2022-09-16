@@ -25,29 +25,31 @@ export default function ChefOfTheWeek() {
         
         {(windowSize<600)  && <DivChefOfTheWeekRestaurants>
         <Slider {...settings}>
-        {AppData.resturantsArray.filter(res => res.resturant.chefName===AppData.chefOfTheWeek.chefName).map((resturant, key)=>(
+        {AppData.resturantsArray.filter(res => res.chefName===AppData.chefOfTheWeek.chefName).map((resturant, key)=>(
            <ResturantCard key={key} 
-           resturantName={resturant.resturant.resturantName}
+           resturantName={resturant.resturantName}
            chefName=''
-           isPopular={resturant.resturant.isPopular}
-           isNew={resturant.resturant.isNew}
-           isOpen={resturant.resturant.isOpen}
-           pathToCover={resturant.resturant.pathToCover}
-           starsNumber={resturant.resturant.starsNumber}/> 
+           isPopular={resturant.isPopular}
+           isNew={resturant.isNew}
+           isOpen={resturant.isOpen}
+           pathToCover={resturant.pathToCover}
+           starsNumber={resturant.starsNumber}
+           dishes={resturant.dishes}/> 
         ))}
         </Slider>
         </DivChefOfTheWeekRestaurants>}
 
         {(windowSize>=600)  && <DivChefOfTheWeekRestaurants>
-        {AppData.resturantsArray.filter(res => res.resturant.chefName===AppData.chefOfTheWeek.chefName).map((resturant, key)=>(
+        {AppData.resturantsArray.filter(res => res.chefName===AppData.chefOfTheWeek.chefName).map((resturant, key)=>(
            <ResturantCard key={key} 
-           resturantName={resturant.resturant.resturantName}
+           resturantName={resturant.resturantName}
            chefName=''
-           isPopular={resturant.resturant.isPopular}
-           isNew={resturant.resturant.isNew}
-           isOpen={resturant.resturant.isOpen}
-           pathToCover={resturant.resturant.pathToCover}
-           starsNumber= {0}/> 
+           isPopular={resturant.isPopular}
+           isNew={resturant.isNew}
+           isOpen={resturant.isOpen}
+           pathToCover={resturant.pathToCover}
+           starsNumber= {0}
+           dishes={resturant.dishes}/> 
         ))}
         </DivChefOfTheWeekRestaurants>}
     </DivChefOfTheWeek>

@@ -3,7 +3,7 @@ import { Img } from '../../layouts/layout/style'
 import { DivSearch, SearchButton, SearchInput } from '../../layouts/searchBar/style'
 import { DivHeroes, DivModalConten, Modal } from './style'
 
-export default function Heroes() {
+export default function Heroe() {
   return (
     <DivHeroes>
         <Modal>

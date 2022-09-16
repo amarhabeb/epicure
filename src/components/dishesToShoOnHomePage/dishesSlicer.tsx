@@ -1,0 +1,20 @@
+import {createSlice } from '@reduxjs/toolkit'
+import { AppData } from '../../constants/data';
+
+export const dishesSlice = createSlice({
+  name: 'dishes',
+  initialState: {
+    value: AppData.dishesArray
+  },
+  reducers: {
+    setDishes: (state, action) => {
+      state.value = action.payload;
+    },
+  },
+})
+
+// Action creators are generated for each case reducer function
+export const { setDishes } = dishesSlice.actions
+
+export default dishesSlice.reducer
+

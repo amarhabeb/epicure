@@ -10,10 +10,10 @@ import PrivacyPolicy from '../../pages/privacyPolicy/PrivacyPolicy';
 import HomePage from '../../pages/homePage/HomePage';
 import Resturants from '../../pages/resturants/Resturants';
 import Chefs from '../../pages/chefs/Chefs';
+import RestaurantProfile from '../../pages/restaurantProfile/RestaurantProfile';
 
 
 export default function LayOut() {
-  console.log(window.innerWidth);
   return (
     <DivLayOut style={{width: 'window.innerWidth', marginTop: '0'}}>
     <BrowserRouter>
@@ -26,6 +26,7 @@ export default function LayOut() {
         <Route path="src/pages/privacyPolicy" element={<PrivacyPolicy/>}/>
         <Route path="src/pages/resturants" element={<Resturants/>}/>
         <Route path="src/pages/chefs" element={<Chefs/>}/>
+        <Route path="src/pages/restaurantProfile/RestaurantProfile" element={<RestaurantProfile/>}/>
       </Routes>     
     <DivFooterInLayOut>
       <Footer/>

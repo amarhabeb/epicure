@@ -1,14 +1,22 @@
 
 div{
  display: flex;
- flex-direction: column-reverse;
- justify-content: space-between;
- align-self: flex-end;
+ flex-direction: column;
+ gap: 22px;
+ height: 100vh;
+ align-items: flex-start;
+ text-decoration: underline;
+ text-decoration-color: #DE9200E5;
+ margin-top: 24px;
+ border-bottom: #DE9200E5 solid;
+ cursor: pointer;
 
+ ;
  @media screen and (min-width: 600px) {
   display: flex;
   flex-direction: row-reverse;
   margin-left: 9%;
+  
 }
-cursor: pointer;
+position: absolute;
 }

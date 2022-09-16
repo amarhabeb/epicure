@@ -17,7 +17,11 @@ border: none;
 
 export const Img = styled.img``
 
-export const Input = styled.input``
+export const Input = styled.input`
+width: 18px;
+height: 18px;
+border: 1px solid #000000;
+`
 
 export const Title = styled.div`
 margin-top: 48px;

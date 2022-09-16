@@ -1,37 +1,41 @@
 import React, { useState } from 'react'
 import SetWindowSize from '../../assests/setWindowSize'
 import RestaurantCardInRestaurantsPage from '../../components/restaurantCardInRestaurantPage/RestaurantCardInRestaurantsPage'
-import { AppData } from '../../constants/data'
+import { resturantCard } from '../../constants/data'
 import { Img, Title } from '../../layouts/layout/style'
 import { DivAll, DivFilterRestaurantsBar, DivMap, DivNew, DivOpen, DivPopular, DivRestaurantsInPage, DivRestaurantsPage, DivSelect } from './style'
+import { useSelector } from 'react-redux';
+
 
 
 export default function Resturants() {
   const windowSize = SetWindowSize();
-  const [restaurantsToShow, setRestaurantsToShow] = useState(AppData.resturantsArray)
-  const [wichActive, setWichActive] = useState('all')
+  const restaurants: resturantCard[] = useSelector((state:any) => state.restaurants.value);
+  const [restaurantsToShow, setRestaurantsToShow] = useState(restaurants);
+  const [wichActive, setWichActive] = useState('all');
+
   function allClicked(){
-    setRestaurantsToShow(AppData.resturantsArray);
+    setRestaurantsToShow(restaurants);
     setWichActive('all');
   }
 
   function newClicked(){
-    setRestaurantsToShow(AppData.resturantsArray.filter(res => res.resturant.isNew));
+    setRestaurantsToShow(restaurants.filter(res => res.isNew));
     setWichActive('new');
   }
 
   function popularClicked(){
-    setRestaurantsToShow(AppData.resturantsArray.filter(res => res.resturant.isPopular));
+    setRestaurantsToShow(restaurants.filter(res => res.isPopular));
     setWichActive('popular');
   }
 
   function openClicked(){
-    setRestaurantsToShow(AppData.resturantsArray.filter(res => res.resturant.isOpen));
+    setRestaurantsToShow(restaurants.filter(res => res.isOpen));
     setWichActive('open');
   }
 
   function mapClicked(){
-    setRestaurantsToShow(AppData.resturantsArray);
+    setRestaurantsToShow(restaurants);
     setWichActive('map');
   }
   return (
@@ -45,19 +49,19 @@ export default function Resturants() {
         {(windowSize>=600) && <DivMap onClick={mapClicked} whichActive = {wichActive}>Map View</DivMap>}
       </DivFilterRestaurantsBar>
       {(windowSize>=600)&& (false) && <DivSelect>
-        aa
       </DivSelect>}
       {(wichActive==="map") && <Img src='/desktop/map.png' alt='mapPic'/>}
-      {(wichActive !="map") && <DivRestaurantsInPage>
+      {(wichActive !=="map") && <DivRestaurantsInPage>
       {restaurantsToShow.map((resturant, key)=>(
            <RestaurantCardInRestaurantsPage key={key} 
-           resturantName={resturant.resturant.resturantName}
-           chefName={resturant.resturant.chefName}
-           isPopular={resturant.resturant.isPopular}
-           isNew={resturant.resturant.isNew}
-           isOpen={resturant.resturant.isOpen}
-           pathToCover={resturant.resturant.pathToCover}
-           starsNumber={resturant.resturant.starsNumber}/> 
+           resturantName={resturant.resturantName}
+           chefName={resturant.chefName}
+           isPopular={resturant.isPopular}
+           isNew={resturant.isNew}
+           isOpen={resturant.isOpen}
+           pathToCover={resturant.pathToCover}
+           starsNumber={resturant.starsNumber}
+           dishes={resturant.dishes}/> 
         ))}
       </DivRestaurantsInPage>}
       

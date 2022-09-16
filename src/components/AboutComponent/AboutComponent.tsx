@@ -1,7 +1,7 @@
 import React from 'react'
 import { AppData } from '../../constants/data'
-import { Div, Img, Title } from '../../layouts/layout/style'
-import { DivAboutContaier, DivAboutFirstParagraph, DivAboutOnHomePage, DivAboutSecondParagraph, DivDownload, DivDownloadContainer, DivlogoContainer, DivSecondPart, ImgDownload, ImgLogo } from './style'
+import { Div, Title } from '../../layouts/layout/style'
+import { DivAboutContaier, DivAboutFirstParagraph, DivAboutOnHomePage, DivDownload, DivDownloadContainer, DivlogoContainer, DivSecondPart, ImgDownload, ImgLogo } from './style'
 
 export default function AboutComponent() {
   return (
